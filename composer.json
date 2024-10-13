@@ -1,0 +1,19 @@
+{
+    "name": "johnn/el-faro_php_project",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Johnn\\ElFaroPhpProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JA"
+        }
+    ],
+    "require": {
+        "bramus/router": "~1.6",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

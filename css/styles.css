@@ -1,0 +1,182 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+h2{
+  padding: 30px;
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+.btn{
+  background-color:black;
+  border-style: hidden;
+}
+.oculto {
+  display: none;
+}
+/* Barra de Navegacion */
+
+.navbar{
+  padding: 2rem;
+  
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* barra de fecha y hora */
+.barra-inferior{
+  background-color: #f8a728;
+}
+/* Noticias Destacadas */
+
+.img-destacados{
+  height: 400px;
+  width: 50%;
+ 
+ 
+}
+.carousel-item{
+  text-align: center;
+  background-color: black;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 para videos */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Seccion de Noticias */
+.card{
+  margin-left: 20px;
+  border-style: hidden;
+
+}
+.relevantes{
+  justify-content: space-around;
+}
+.card-curiosidades{
+  width: 12rem;
+  background-color: #f8a728;
+  margin-top: 5px;
+}
+
+/* telepronter(seccion de avisos) */
+.teleprompter {
+  position: relative;
+  background-color: #f8a728;
+  color: black;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: moverTeleprompter 15s linear infinite; /* Ajusta la velocidad aquí */
+}
+@keyframes moverTeleprompter {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(100%);
+  }
+}
+
+
+/* contacto */
+.contacto{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ececec;
+  padding-bottom: 20px ;
+}
+.Formulario{
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  padding: 20px;
+}
+.Agregar_noticias{
+  display: flex;
+  flex-direction: column;
+}
+.formulario-noticia{
+  display: flex;
+  flex-direction: column;
+}
+.btn-enviar{
+  margin-top: 5px;
+}
+/* footer */
+
+footer {
+  min-height: 500px;
+  background-color: #f8a728;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: 1.6rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales svg {
+  color: white;
+  font-size: 1.6rem;
+  transition: all 0.2s ease-in;
+}
+
+
+.iconos-redes-sociales a:hover i {
+  color: black;
+}
+
+.derechos-de-autor {
+  font-size: 24rem;
+  color: black;
+  padding: 20px;
+}
+
+
+/* adaptable (responsivo) */
+@media screen and (max-width:767px){
+  .navbar-brand{
+    display: none;
+  }
+}

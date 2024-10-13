@@ -1,0 +1,17 @@
+<?php
+
+namespace Johnn\ElFaroPhpProject\controllers;
+
+use Johnn\ElFaroPhpProject\lib\Controller;
+
+
+class ArticulosController extends Controller {
+
+    public function index() {
+        // Obtener artículos de la base de datos
+        $articulos = Article::getAll(); 
+        
+        // Cargar la vista de artículos y pasar los datos
+        $this->view('articulos/index', ['articulos' => $articulos]);
+    }
+}
